@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 using AerolineaFrba.Mappings;
+using AerolineaFrba.Menu;
 
 
 
@@ -28,6 +29,10 @@ namespace AerolineaFrba
 
         private void Ingresar_click(object sender, EventArgs e)
         {
+            // Llamo al Menú
+            MenuPpal frm = new Menu.MenuPpal();
+            this.Hide();
+            frm.Show();
             /* el pass de prueba que use es AAAA para el usuario PEPE*/
 
             try
@@ -52,6 +57,7 @@ namespace AerolineaFrba
                     else
                         MessageBox.Show("Se ha logueado correctamente"); /* aca hay que hacer lo que siga*/
 
+                    
                 }
 
                 #endregion
