@@ -20,17 +20,17 @@ namespace AerolineaFrba {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("GD2C2015DataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("GD2C2015DataSetObtenerVueloRegistro")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class GD2C2015DataSet1 : global::System.Data.DataSet {
+    public partial class GD2C2015DataSetObtenerVueloRegistro : global::System.Data.DataSet {
         
-        private CIUDADDataTable tableCIUDAD;
+        private ObtenerVueloRegistroDataTable tableObtenerVueloRegistro;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public GD2C2015DataSet1() {
+        public GD2C2015DataSetObtenerVueloRegistro() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace AerolineaFrba {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected GD2C2015DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected GD2C2015DataSetObtenerVueloRegistro(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace AerolineaFrba {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["CIUDAD"] != null)) {
-                    base.Tables.Add(new CIUDADDataTable(ds.Tables["CIUDAD"]));
+                if ((ds.Tables["ObtenerVueloRegistro"] != null)) {
+                    base.Tables.Add(new ObtenerVueloRegistroDataTable(ds.Tables["ObtenerVueloRegistro"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace AerolineaFrba {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public CIUDADDataTable CIUDAD {
+        public ObtenerVueloRegistroDataTable ObtenerVueloRegistro {
             get {
-                return this.tableCIUDAD;
+                return this.tableObtenerVueloRegistro;
             }
         }
         
@@ -127,7 +127,7 @@ namespace AerolineaFrba {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            GD2C2015DataSet1 cln = ((GD2C2015DataSet1)(base.Clone()));
+            GD2C2015DataSetObtenerVueloRegistro cln = ((GD2C2015DataSetObtenerVueloRegistro)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace AerolineaFrba {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["CIUDAD"] != null)) {
-                    base.Tables.Add(new CIUDADDataTable(ds.Tables["CIUDAD"]));
+                if ((ds.Tables["ObtenerVueloRegistro"] != null)) {
+                    base.Tables.Add(new ObtenerVueloRegistroDataTable(ds.Tables["ObtenerVueloRegistro"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace AerolineaFrba {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableCIUDAD = ((CIUDADDataTable)(base.Tables["CIUDAD"]));
+            this.tableObtenerVueloRegistro = ((ObtenerVueloRegistroDataTable)(base.Tables["ObtenerVueloRegistro"]));
             if ((initTable == true)) {
-                if ((this.tableCIUDAD != null)) {
-                    this.tableCIUDAD.InitVars();
+                if ((this.tableObtenerVueloRegistro != null)) {
+                    this.tableObtenerVueloRegistro.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace AerolineaFrba {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "GD2C2015DataSet1";
+            this.DataSetName = "GD2C2015DataSetObtenerVueloRegistro";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/GD2C2015DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/GD2C2015DataSetObtenerVueloRegistro.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableCIUDAD = new CIUDADDataTable();
-            base.Tables.Add(this.tableCIUDAD);
+            this.tableObtenerVueloRegistro = new ObtenerVueloRegistroDataTable();
+            base.Tables.Add(this.tableObtenerVueloRegistro);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeCIUDAD() {
+        private bool ShouldSerializeObtenerVueloRegistro() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace AerolineaFrba {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            GD2C2015DataSet1 ds = new GD2C2015DataSet1();
+            GD2C2015DataSetObtenerVueloRegistro ds = new GD2C2015DataSetObtenerVueloRegistro();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,33 @@ namespace AerolineaFrba {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void CIUDADRowChangeEventHandler(object sender, CIUDADRowChangeEvent e);
+        public delegate void ObtenerVueloRegistroRowChangeEventHandler(object sender, ObtenerVueloRegistroRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CIUDADDataTable : global::System.Data.TypedTableBase<CIUDADRow> {
+        public partial class ObtenerVueloRegistroDataTable : global::System.Data.TypedTableBase<ObtenerVueloRegistroRow> {
             
-            private global::System.Data.DataColumn columnCIUDAD_ID;
+            private global::System.Data.DataColumn columnVUELO_ID;
             
-            private global::System.Data.DataColumn columnCIUDAD_NOMBRE;
+            private global::System.Data.DataColumn columnAERO_MATRICULA;
+            
+            private global::System.Data.DataColumn columnCiudadOrigen;
+            
+            private global::System.Data.DataColumn columnCiudadDestino;
+            
+            private global::System.Data.DataColumn columnVUELO_FECHA_SALIDA;
+            
+            private global::System.Data.DataColumn columnVUELO_FECHA_LLEGADA_ESTIMADA;
+            
+            private global::System.Data.DataColumn columnVUELO_FECHA_LLEGADA;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CIUDADDataTable() {
-                this.TableName = "CIUDAD";
+            public ObtenerVueloRegistroDataTable() {
+                this.TableName = "ObtenerVueloRegistro";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +304,7 @@ namespace AerolineaFrba {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal CIUDADDataTable(global::System.Data.DataTable table) {
+            internal ObtenerVueloRegistroDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +321,64 @@ namespace AerolineaFrba {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected CIUDADDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ObtenerVueloRegistroDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CIUDAD_IDColumn {
+            public global::System.Data.DataColumn VUELO_IDColumn {
                 get {
-                    return this.columnCIUDAD_ID;
+                    return this.columnVUELO_ID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CIUDAD_NOMBREColumn {
+            public global::System.Data.DataColumn AERO_MATRICULAColumn {
                 get {
-                    return this.columnCIUDAD_NOMBRE;
+                    return this.columnAERO_MATRICULA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CiudadOrigenColumn {
+                get {
+                    return this.columnCiudadOrigen;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CiudadDestinoColumn {
+                get {
+                    return this.columnCiudadDestino;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VUELO_FECHA_SALIDAColumn {
+                get {
+                    return this.columnVUELO_FECHA_SALIDA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VUELO_FECHA_LLEGADA_ESTIMADAColumn {
+                get {
+                    return this.columnVUELO_FECHA_LLEGADA_ESTIMADA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VUELO_FECHA_LLEGADAColumn {
+                get {
+                    return this.columnVUELO_FECHA_LLEGADA;
                 }
             }
             
@@ -343,53 +393,58 @@ namespace AerolineaFrba {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CIUDADRow this[int index] {
+            public ObtenerVueloRegistroRow this[int index] {
                 get {
-                    return ((CIUDADRow)(this.Rows[index]));
+                    return ((ObtenerVueloRegistroRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event CIUDADRowChangeEventHandler CIUDADRowChanging;
+            public event ObtenerVueloRegistroRowChangeEventHandler ObtenerVueloRegistroRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event CIUDADRowChangeEventHandler CIUDADRowChanged;
+            public event ObtenerVueloRegistroRowChangeEventHandler ObtenerVueloRegistroRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event CIUDADRowChangeEventHandler CIUDADRowDeleting;
+            public event ObtenerVueloRegistroRowChangeEventHandler ObtenerVueloRegistroRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event CIUDADRowChangeEventHandler CIUDADRowDeleted;
+            public event ObtenerVueloRegistroRowChangeEventHandler ObtenerVueloRegistroRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddCIUDADRow(CIUDADRow row) {
+            public void AddObtenerVueloRegistroRow(ObtenerVueloRegistroRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CIUDADRow AddCIUDADRow(string CIUDAD_NOMBRE) {
-                CIUDADRow rowCIUDADRow = ((CIUDADRow)(this.NewRow()));
+            public ObtenerVueloRegistroRow AddObtenerVueloRegistroRow(string AERO_MATRICULA, string CiudadOrigen, string CiudadDestino, System.DateTime VUELO_FECHA_SALIDA, System.DateTime VUELO_FECHA_LLEGADA_ESTIMADA, System.DateTime VUELO_FECHA_LLEGADA) {
+                ObtenerVueloRegistroRow rowObtenerVueloRegistroRow = ((ObtenerVueloRegistroRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        CIUDAD_NOMBRE};
-                rowCIUDADRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowCIUDADRow);
-                return rowCIUDADRow;
+                        AERO_MATRICULA,
+                        CiudadOrigen,
+                        CiudadDestino,
+                        VUELO_FECHA_SALIDA,
+                        VUELO_FECHA_LLEGADA_ESTIMADA,
+                        VUELO_FECHA_LLEGADA};
+                rowObtenerVueloRegistroRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowObtenerVueloRegistroRow);
+                return rowObtenerVueloRegistroRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CIUDADRow FindByCIUDAD_ID(int CIUDAD_ID) {
-                return ((CIUDADRow)(this.Rows.Find(new object[] {
-                            CIUDAD_ID})));
+            public ObtenerVueloRegistroRow FindByVUELO_ID(int VUELO_ID) {
+                return ((ObtenerVueloRegistroRow)(this.Rows.Find(new object[] {
+                            VUELO_ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                CIUDADDataTable cln = ((CIUDADDataTable)(base.Clone()));
+                ObtenerVueloRegistroDataTable cln = ((ObtenerVueloRegistroDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,58 +452,73 @@ namespace AerolineaFrba {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new CIUDADDataTable();
+                return new ObtenerVueloRegistroDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnCIUDAD_ID = base.Columns["CIUDAD_ID"];
-                this.columnCIUDAD_NOMBRE = base.Columns["CIUDAD_NOMBRE"];
+                this.columnVUELO_ID = base.Columns["VUELO_ID"];
+                this.columnAERO_MATRICULA = base.Columns["AERO_MATRICULA"];
+                this.columnCiudadOrigen = base.Columns["CiudadOrigen"];
+                this.columnCiudadDestino = base.Columns["CiudadDestino"];
+                this.columnVUELO_FECHA_SALIDA = base.Columns["VUELO_FECHA_SALIDA"];
+                this.columnVUELO_FECHA_LLEGADA_ESTIMADA = base.Columns["VUELO_FECHA_LLEGADA_ESTIMADA"];
+                this.columnVUELO_FECHA_LLEGADA = base.Columns["VUELO_FECHA_LLEGADA"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnCIUDAD_ID = new global::System.Data.DataColumn("CIUDAD_ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCIUDAD_ID);
-                this.columnCIUDAD_NOMBRE = new global::System.Data.DataColumn("CIUDAD_NOMBRE", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCIUDAD_NOMBRE);
+                this.columnVUELO_ID = new global::System.Data.DataColumn("VUELO_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVUELO_ID);
+                this.columnAERO_MATRICULA = new global::System.Data.DataColumn("AERO_MATRICULA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAERO_MATRICULA);
+                this.columnCiudadOrigen = new global::System.Data.DataColumn("CiudadOrigen", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCiudadOrigen);
+                this.columnCiudadDestino = new global::System.Data.DataColumn("CiudadDestino", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCiudadDestino);
+                this.columnVUELO_FECHA_SALIDA = new global::System.Data.DataColumn("VUELO_FECHA_SALIDA", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVUELO_FECHA_SALIDA);
+                this.columnVUELO_FECHA_LLEGADA_ESTIMADA = new global::System.Data.DataColumn("VUELO_FECHA_LLEGADA_ESTIMADA", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVUELO_FECHA_LLEGADA_ESTIMADA);
+                this.columnVUELO_FECHA_LLEGADA = new global::System.Data.DataColumn("VUELO_FECHA_LLEGADA", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVUELO_FECHA_LLEGADA);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnCIUDAD_ID}, true));
-                this.columnCIUDAD_ID.AutoIncrement = true;
-                this.columnCIUDAD_ID.AutoIncrementSeed = -1;
-                this.columnCIUDAD_ID.AutoIncrementStep = -1;
-                this.columnCIUDAD_ID.AllowDBNull = false;
-                this.columnCIUDAD_ID.ReadOnly = true;
-                this.columnCIUDAD_ID.Unique = true;
-                this.columnCIUDAD_NOMBRE.MaxLength = 255;
+                                this.columnVUELO_ID}, true));
+                this.columnVUELO_ID.AutoIncrement = true;
+                this.columnVUELO_ID.AllowDBNull = false;
+                this.columnVUELO_ID.ReadOnly = true;
+                this.columnVUELO_ID.Unique = true;
+                this.columnAERO_MATRICULA.MaxLength = 255;
+                this.columnCiudadOrigen.MaxLength = 255;
+                this.columnCiudadDestino.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CIUDADRow NewCIUDADRow() {
-                return ((CIUDADRow)(this.NewRow()));
+            public ObtenerVueloRegistroRow NewObtenerVueloRegistroRow() {
+                return ((ObtenerVueloRegistroRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new CIUDADRow(builder);
+                return new ObtenerVueloRegistroRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(CIUDADRow);
+                return typeof(ObtenerVueloRegistroRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.CIUDADRowChanged != null)) {
-                    this.CIUDADRowChanged(this, new CIUDADRowChangeEvent(((CIUDADRow)(e.Row)), e.Action));
+                if ((this.ObtenerVueloRegistroRowChanged != null)) {
+                    this.ObtenerVueloRegistroRowChanged(this, new ObtenerVueloRegistroRowChangeEvent(((ObtenerVueloRegistroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -456,8 +526,8 @@ namespace AerolineaFrba {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.CIUDADRowChanging != null)) {
-                    this.CIUDADRowChanging(this, new CIUDADRowChangeEvent(((CIUDADRow)(e.Row)), e.Action));
+                if ((this.ObtenerVueloRegistroRowChanging != null)) {
+                    this.ObtenerVueloRegistroRowChanging(this, new ObtenerVueloRegistroRowChangeEvent(((ObtenerVueloRegistroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -465,8 +535,8 @@ namespace AerolineaFrba {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.CIUDADRowDeleted != null)) {
-                    this.CIUDADRowDeleted(this, new CIUDADRowChangeEvent(((CIUDADRow)(e.Row)), e.Action));
+                if ((this.ObtenerVueloRegistroRowDeleted != null)) {
+                    this.ObtenerVueloRegistroRowDeleted(this, new ObtenerVueloRegistroRowChangeEvent(((ObtenerVueloRegistroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -474,14 +544,14 @@ namespace AerolineaFrba {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.CIUDADRowDeleting != null)) {
-                    this.CIUDADRowDeleting(this, new CIUDADRowChangeEvent(((CIUDADRow)(e.Row)), e.Action));
+                if ((this.ObtenerVueloRegistroRowDeleting != null)) {
+                    this.ObtenerVueloRegistroRowDeleting(this, new ObtenerVueloRegistroRowChangeEvent(((ObtenerVueloRegistroRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveCIUDADRow(CIUDADRow row) {
+            public void RemoveObtenerVueloRegistroRow(ObtenerVueloRegistroRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -490,7 +560,7 @@ namespace AerolineaFrba {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                GD2C2015DataSet1 ds = new GD2C2015DataSet1();
+                GD2C2015DataSetObtenerVueloRegistro ds = new GD2C2015DataSetObtenerVueloRegistro();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -508,7 +578,7 @@ namespace AerolineaFrba {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "CIUDADDataTable";
+                attribute2.FixedValue = "ObtenerVueloRegistroDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -552,54 +622,200 @@ namespace AerolineaFrba {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class CIUDADRow : global::System.Data.DataRow {
+        public partial class ObtenerVueloRegistroRow : global::System.Data.DataRow {
             
-            private CIUDADDataTable tableCIUDAD;
+            private ObtenerVueloRegistroDataTable tableObtenerVueloRegistro;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal CIUDADRow(global::System.Data.DataRowBuilder rb) : 
+            internal ObtenerVueloRegistroRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableCIUDAD = ((CIUDADDataTable)(this.Table));
+                this.tableObtenerVueloRegistro = ((ObtenerVueloRegistroDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int CIUDAD_ID {
+            public int VUELO_ID {
                 get {
-                    return ((int)(this[this.tableCIUDAD.CIUDAD_IDColumn]));
+                    return ((int)(this[this.tableObtenerVueloRegistro.VUELO_IDColumn]));
                 }
                 set {
-                    this[this.tableCIUDAD.CIUDAD_IDColumn] = value;
+                    this[this.tableObtenerVueloRegistro.VUELO_IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CIUDAD_NOMBRE {
+            public string AERO_MATRICULA {
                 get {
                     try {
-                        return ((string)(this[this.tableCIUDAD.CIUDAD_NOMBREColumn]));
+                        return ((string)(this[this.tableObtenerVueloRegistro.AERO_MATRICULAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CIUDAD_NOMBRE\' de la tabla \'CIUDAD\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'AERO_MATRICULA\' de la tabla \'ObtenerVueloRegistro\' es DBN" +
+                                "ull.", e);
                     }
                 }
                 set {
-                    this[this.tableCIUDAD.CIUDAD_NOMBREColumn] = value;
+                    this[this.tableObtenerVueloRegistro.AERO_MATRICULAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCIUDAD_NOMBRENull() {
-                return this.IsNull(this.tableCIUDAD.CIUDAD_NOMBREColumn);
+            public string CiudadOrigen {
+                get {
+                    try {
+                        return ((string)(this[this.tableObtenerVueloRegistro.CiudadOrigenColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CiudadOrigen\' de la tabla \'ObtenerVueloRegistro\' es DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableObtenerVueloRegistro.CiudadOrigenColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCIUDAD_NOMBRENull() {
-                this[this.tableCIUDAD.CIUDAD_NOMBREColumn] = global::System.Convert.DBNull;
+            public string CiudadDestino {
+                get {
+                    try {
+                        return ((string)(this[this.tableObtenerVueloRegistro.CiudadDestinoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CiudadDestino\' de la tabla \'ObtenerVueloRegistro\' es DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableObtenerVueloRegistro.CiudadDestinoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime VUELO_FECHA_SALIDA {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableObtenerVueloRegistro.VUELO_FECHA_SALIDAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'VUELO_FECHA_SALIDA\' de la tabla \'ObtenerVueloRegistro\' es" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableObtenerVueloRegistro.VUELO_FECHA_SALIDAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime VUELO_FECHA_LLEGADA_ESTIMADA {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableObtenerVueloRegistro.VUELO_FECHA_LLEGADA_ESTIMADAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'VUELO_FECHA_LLEGADA_ESTIMADA\' de la tabla \'ObtenerVueloRe" +
+                                "gistro\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableObtenerVueloRegistro.VUELO_FECHA_LLEGADA_ESTIMADAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime VUELO_FECHA_LLEGADA {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableObtenerVueloRegistro.VUELO_FECHA_LLEGADAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'VUELO_FECHA_LLEGADA\' de la tabla \'ObtenerVueloRegistro\' e" +
+                                "s DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableObtenerVueloRegistro.VUELO_FECHA_LLEGADAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAERO_MATRICULANull() {
+                return this.IsNull(this.tableObtenerVueloRegistro.AERO_MATRICULAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAERO_MATRICULANull() {
+                this[this.tableObtenerVueloRegistro.AERO_MATRICULAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCiudadOrigenNull() {
+                return this.IsNull(this.tableObtenerVueloRegistro.CiudadOrigenColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCiudadOrigenNull() {
+                this[this.tableObtenerVueloRegistro.CiudadOrigenColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCiudadDestinoNull() {
+                return this.IsNull(this.tableObtenerVueloRegistro.CiudadDestinoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCiudadDestinoNull() {
+                this[this.tableObtenerVueloRegistro.CiudadDestinoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVUELO_FECHA_SALIDANull() {
+                return this.IsNull(this.tableObtenerVueloRegistro.VUELO_FECHA_SALIDAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVUELO_FECHA_SALIDANull() {
+                this[this.tableObtenerVueloRegistro.VUELO_FECHA_SALIDAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVUELO_FECHA_LLEGADA_ESTIMADANull() {
+                return this.IsNull(this.tableObtenerVueloRegistro.VUELO_FECHA_LLEGADA_ESTIMADAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVUELO_FECHA_LLEGADA_ESTIMADANull() {
+                this[this.tableObtenerVueloRegistro.VUELO_FECHA_LLEGADA_ESTIMADAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVUELO_FECHA_LLEGADANull() {
+                return this.IsNull(this.tableObtenerVueloRegistro.VUELO_FECHA_LLEGADAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVUELO_FECHA_LLEGADANull() {
+                this[this.tableObtenerVueloRegistro.VUELO_FECHA_LLEGADAColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -607,22 +823,22 @@ namespace AerolineaFrba {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class CIUDADRowChangeEvent : global::System.EventArgs {
+        public class ObtenerVueloRegistroRowChangeEvent : global::System.EventArgs {
             
-            private CIUDADRow eventRow;
+            private ObtenerVueloRegistroRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CIUDADRowChangeEvent(CIUDADRow row, global::System.Data.DataRowAction action) {
+            public ObtenerVueloRegistroRowChangeEvent(ObtenerVueloRegistroRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CIUDADRow Row {
+            public ObtenerVueloRegistroRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -638,7 +854,7 @@ namespace AerolineaFrba {
         }
     }
 }
-namespace AerolineaFrba.GD2C2015DataSet1TableAdapters {
+namespace AerolineaFrba.GD2C2015DataSetObtenerVueloRegistroTableAdapters {
     
     
     /// <summary>
@@ -650,7 +866,7 @@ namespace AerolineaFrba.GD2C2015DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class CIUDADTableAdapter : global::System.ComponentModel.Component {
+    public partial class ObtenerVueloRegistroTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -664,7 +880,7 @@ namespace AerolineaFrba.GD2C2015DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public CIUDADTableAdapter() {
+        public ObtenerVueloRegistroTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -761,35 +977,15 @@ namespace AerolineaFrba.GD2C2015DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "CIUDAD";
-            tableMapping.ColumnMappings.Add("CIUDAD_ID", "CIUDAD_ID");
-            tableMapping.ColumnMappings.Add("CIUDAD_NOMBRE", "CIUDAD_NOMBRE");
+            tableMapping.DataSetTable = "ObtenerVueloRegistro";
+            tableMapping.ColumnMappings.Add("VUELO_ID", "VUELO_ID");
+            tableMapping.ColumnMappings.Add("AERO_MATRICULA", "AERO_MATRICULA");
+            tableMapping.ColumnMappings.Add("CiudadOrigen", "CiudadOrigen");
+            tableMapping.ColumnMappings.Add("CiudadDestino", "CiudadDestino");
+            tableMapping.ColumnMappings.Add("VUELO_FECHA_SALIDA", "VUELO_FECHA_SALIDA");
+            tableMapping.ColumnMappings.Add("VUELO_FECHA_LLEGADA_ESTIMADA", "VUELO_FECHA_LLEGADA_ESTIMADA");
+            tableMapping.ColumnMappings.Add("VUELO_FECHA_LLEGADA", "VUELO_FECHA_LLEGADA");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [#GDD].[CIUDAD] WHERE (([CIUDAD_ID] = @Original_CIUDAD_ID) AND ((@IsN" +
-                "ull_CIUDAD_NOMBRE = 1 AND [CIUDAD_NOMBRE] IS NULL) OR ([CIUDAD_NOMBRE] = @Origin" +
-                "al_CIUDAD_NOMBRE)))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CIUDAD_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CIUDAD_NOMBRE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_NOMBRE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CIUDAD_NOMBRE", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_NOMBRE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [#GDD].[CIUDAD] ([CIUDAD_NOMBRE]) VALUES (@CIUDAD_NOMBRE);\r\nSELECT CI" +
-                "UDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = SCOPE_IDENTITY())";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CIUDAD_NOMBRE", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_NOMBRE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [#GDD].[CIUDAD] SET [CIUDAD_NOMBRE] = @CIUDAD_NOMBRE WHERE (([CIUDAD_ID] = @Original_CIUDAD_ID) AND ((@IsNull_CIUDAD_NOMBRE = 1 AND [CIUDAD_NOMBRE] IS NULL) OR ([CIUDAD_NOMBRE] = @Original_CIUDAD_NOMBRE)));
-SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CIUDAD_NOMBRE", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_NOMBRE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CIUDAD_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CIUDAD_NOMBRE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_NOMBRE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CIUDAD_NOMBRE", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_NOMBRE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CIUDAD_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "CIUDAD_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -805,16 +1001,38 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].CommandText = "[#GDD].ObtenerVueloRegistro";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Matricula", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CiudadOrigen", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CiudadDestino", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(GD2C2015DataSet1.CIUDADDataTable dataTable) {
+        public virtual int Fill(GD2C2015DataSetObtenerVueloRegistro.ObtenerVueloRegistroDataTable dataTable, string Matricula, string CiudadOrigen, string CiudadDestino) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Matricula == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Matricula));
+            }
+            if ((CiudadOrigen == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(CiudadOrigen));
+            }
+            if ((CiudadDestino == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(CiudadDestino));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -826,142 +1044,29 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual GD2C2015DataSet1.CIUDADDataTable GetData() {
+        public virtual GD2C2015DataSetObtenerVueloRegistro.ObtenerVueloRegistroDataTable GetData(string Matricula, string CiudadOrigen, string CiudadDestino) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            GD2C2015DataSet1.CIUDADDataTable dataTable = new GD2C2015DataSet1.CIUDADDataTable();
+            if ((Matricula == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Matricula));
+            }
+            if ((CiudadOrigen == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(CiudadOrigen));
+            }
+            if ((CiudadDestino == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(CiudadDestino));
+            }
+            GD2C2015DataSetObtenerVueloRegistro.ObtenerVueloRegistroDataTable dataTable = new GD2C2015DataSetObtenerVueloRegistro.ObtenerVueloRegistroDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GD2C2015DataSet1.CIUDADDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GD2C2015DataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "CIUDAD");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_CIUDAD_ID, string Original_CIUDAD_NOMBRE) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_CIUDAD_ID));
-            if ((Original_CIUDAD_NOMBRE == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_CIUDAD_NOMBRE));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string CIUDAD_NOMBRE) {
-            if ((CIUDAD_NOMBRE == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(CIUDAD_NOMBRE));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string CIUDAD_NOMBRE, int Original_CIUDAD_ID, string Original_CIUDAD_NOMBRE, int CIUDAD_ID) {
-            if ((CIUDAD_NOMBRE == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(CIUDAD_NOMBRE));
-            }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Original_CIUDAD_ID));
-            if ((Original_CIUDAD_NOMBRE == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_CIUDAD_NOMBRE));
-            }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(CIUDAD_ID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string CIUDAD_NOMBRE, int Original_CIUDAD_ID, string Original_CIUDAD_NOMBRE) {
-            return this.Update(CIUDAD_NOMBRE, Original_CIUDAD_ID, Original_CIUDAD_NOMBRE, Original_CIUDAD_ID);
         }
     }
     
@@ -977,8 +1082,6 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         
         private UpdateOrderOption _updateOrder;
         
-        private CIUDADTableAdapter _cIUDADTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -991,20 +1094,6 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public CIUDADTableAdapter CIUDADTableAdapter {
-            get {
-                return this._cIUDADTableAdapter;
-            }
-            set {
-                this._cIUDADTableAdapter = value;
             }
         }
         
@@ -1027,10 +1116,6 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._cIUDADTableAdapter != null) 
-                            && (this._cIUDADTableAdapter.Connection != null))) {
-                    return this._cIUDADTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -1044,9 +1129,6 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._cIUDADTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -1056,17 +1138,8 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(GD2C2015DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(GD2C2015DataSetObtenerVueloRegistro dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._cIUDADTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.CIUDAD.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._cIUDADTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -1075,16 +1148,8 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(GD2C2015DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(GD2C2015DataSetObtenerVueloRegistro dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._cIUDADTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.CIUDAD.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._cIUDADTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -1093,16 +1158,8 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(GD2C2015DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(GD2C2015DataSetObtenerVueloRegistro dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._cIUDADTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CIUDAD.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cIUDADTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1135,17 +1192,12 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(GD2C2015DataSet1 dataSet) {
+        public virtual int UpdateAll(GD2C2015DataSetObtenerVueloRegistro dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
-            }
-            if (((this._cIUDADTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._cIUDADTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
-                        "sma cadena de conexión.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1179,15 +1231,6 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._cIUDADTableAdapter != null)) {
-                    revertConnections.Add(this._cIUDADTableAdapter, this._cIUDADTableAdapter.Connection);
-                    this._cIUDADTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._cIUDADTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._cIUDADTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._cIUDADTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._cIUDADTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1245,10 +1288,6 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._cIUDADTableAdapter != null)) {
-                    this._cIUDADTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._cIUDADTableAdapter]));
-                    this._cIUDADTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

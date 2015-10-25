@@ -29,52 +29,42 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.cIUDADBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gD2C2015DataSetJ = new AerolineaFrba.GD2C2015DataSetJ();
+            this.cIUDADBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.gD2C2015DataSetCiudad = new AerolineaFrba.GD2C2015DataSetCiudad();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cIUDADBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cIUDADTableAdapter = new AerolineaFrba.GD2C2015DataSetJTableAdapters.CIUDADTableAdapter();
-            this.obtenerVueloRegistroBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.gD2C2015DataSetJBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.obtenerVueloRegistroBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.obtenerVueloRegistroTableAdapter = new AerolineaFrba.GD2C2015DataSetJTableAdapters.ObtenerVueloRegistroTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gD2C2015DataSet1 = new AerolineaFrba.GD2C2015DataSet1();
-            this.cIUDADBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cIUDADTableAdapter1 = new AerolineaFrba.GD2C2015DataSet1TableAdapters.CIUDADTableAdapter();
-            this.gD2C2015DataSet2 = new AerolineaFrba.GD2C2015DataSet2();
-            this.cIUDADBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.cIUDADTableAdapter2 = new AerolineaFrba.GD2C2015DataSet2TableAdapters.CIUDADTableAdapter();
-            this.gD2C2015DataSet3 = new AerolineaFrba.GD2C2015DataSet3();
-            this.obtenerVueloRegistroBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.obtenerVueloRegistroTableAdapter1 = new AerolineaFrba.GD2C2015DataSet3TableAdapters.ObtenerVueloRegistroTableAdapter();
+            this.obtenerVueloRegistroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gD2C2015DataSetObtenerVueloRegistro = new AerolineaFrba.GD2C2015DataSetObtenerVueloRegistro();
+            this.btnGrabar = new System.Windows.Forms.Button();
+            this.cIUDADTableAdapter = new AerolineaFrba.GD2C2015DataSetCiudadTableAdapters.CIUDADTableAdapter();
+            this.obtenerVueloRegistroTableAdapter = new AerolineaFrba.GD2C2015DataSetObtenerVueloRegistroTableAdapters.ObtenerVueloRegistroTableAdapter();
+            this.ColumnaCambios = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.NroVuelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aEROMATRICULADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ciudadOrigenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ciudadDestinoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.vUELOFECHASALIDADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vUELOFECHALLEGADAESTIMADADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vUELOFECHALLEGADADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VueloFechaLlegada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cIUDADBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSetJ)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obtenerVueloRegistroBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSetJBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obtenerVueloRegistroBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cIUDADBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cIUDADBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obtenerVueloRegistroBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSetCiudad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cIUDADBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.obtenerVueloRegistroBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSetObtenerVueloRegistro)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -114,15 +104,15 @@
             this.comboBox2.TabIndex = 5;
             this.comboBox2.ValueMember = "CIUDAD_NOMBRE";
             // 
-            // cIUDADBindingSource
+            // cIUDADBindingSource1
             // 
-            this.cIUDADBindingSource.DataMember = "CIUDAD";
-            this.cIUDADBindingSource.DataSource = this.gD2C2015DataSetJ;
+            this.cIUDADBindingSource1.DataMember = "CIUDAD";
+            this.cIUDADBindingSource1.DataSource = this.gD2C2015DataSetCiudad;
             // 
-            // gD2C2015DataSetJ
+            // gD2C2015DataSetCiudad
             // 
-            this.gD2C2015DataSetJ.DataSetName = "GD2C2015DataSetJ";
-            this.gD2C2015DataSetJ.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.gD2C2015DataSetCiudad.DataSetName = "GD2C2015DataSetCiudad";
+            this.gD2C2015DataSetCiudad.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBox1
             // 
@@ -134,6 +124,11 @@
             this.comboBox1.Size = new System.Drawing.Size(173, 21);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.ValueMember = "CIUDAD_NOMBRE";
+            // 
+            // cIUDADBindingSource
+            // 
+            this.cIUDADBindingSource.DataMember = "CIUDAD";
+            this.cIUDADBindingSource.DataSource = this.gD2C2015DataSetCiudad;
             // 
             // txtMatricula
             // 
@@ -178,88 +173,83 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
-            // cIUDADTableAdapter
-            // 
-            this.cIUDADTableAdapter.ClearBeforeFill = true;
-            // 
-            // obtenerVueloRegistroBindingSource1
-            // 
-            this.obtenerVueloRegistroBindingSource1.DataMember = "ObtenerVueloRegistro";
-            this.obtenerVueloRegistroBindingSource1.DataSource = this.gD2C2015DataSetJBindingSource;
-            // 
-            // gD2C2015DataSetJBindingSource
-            // 
-            this.gD2C2015DataSetJBindingSource.DataSource = this.gD2C2015DataSetJ;
-            this.gD2C2015DataSetJBindingSource.Position = 0;
-            // 
-            // obtenerVueloRegistroBindingSource
-            // 
-            this.obtenerVueloRegistroBindingSource.DataMember = "ObtenerVueloRegistro";
-            this.obtenerVueloRegistroBindingSource.DataSource = this.gD2C2015DataSetJBindingSource;
-            // 
-            // obtenerVueloRegistroTableAdapter
-            // 
-            this.obtenerVueloRegistroTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnaCambios,
             this.NroVuelo,
             this.aEROMATRICULADataGridViewTextBoxColumn,
             this.ciudadOrigenDataGridViewTextBoxColumn,
             this.ciudadDestinoDataGridViewTextBoxColumn,
             this.vUELOFECHASALIDADataGridViewTextBoxColumn,
             this.vUELOFECHALLEGADAESTIMADADataGridViewTextBoxColumn,
-            this.vUELOFECHALLEGADADataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.obtenerVueloRegistroBindingSource2;
+            this.VueloFechaLlegada});
+            this.dataGridView1.DataSource = this.obtenerVueloRegistroBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(12, 140);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(854, 150);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Size = new System.Drawing.Size(854, 295);
             this.dataGridView1.TabIndex = 2;
             // 
-            // gD2C2015DataSet1
+            // obtenerVueloRegistroBindingSource
             // 
-            this.gD2C2015DataSet1.DataSetName = "GD2C2015DataSet1";
-            this.gD2C2015DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.obtenerVueloRegistroBindingSource.DataMember = "ObtenerVueloRegistro";
+            this.obtenerVueloRegistroBindingSource.DataSource = this.gD2C2015DataSetObtenerVueloRegistro;
             // 
-            // cIUDADBindingSource1
+            // gD2C2015DataSetObtenerVueloRegistro
             // 
-            this.cIUDADBindingSource1.DataMember = "CIUDAD";
-            this.cIUDADBindingSource1.DataSource = this.gD2C2015DataSet1;
+            this.gD2C2015DataSetObtenerVueloRegistro.DataSetName = "GD2C2015DataSetObtenerVueloRegistro";
+            this.gD2C2015DataSetObtenerVueloRegistro.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // cIUDADTableAdapter1
+            // btnGrabar
             // 
-            this.cIUDADTableAdapter1.ClearBeforeFill = true;
+            this.btnGrabar.Location = new System.Drawing.Point(773, 455);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(84, 32);
+            this.btnGrabar.TabIndex = 3;
+            this.btnGrabar.Text = "Grabar Datos";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
-            // gD2C2015DataSet2
+            // cIUDADTableAdapter
             // 
-            this.gD2C2015DataSet2.DataSetName = "GD2C2015DataSet2";
-            this.gD2C2015DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cIUDADTableAdapter.ClearBeforeFill = true;
             // 
-            // cIUDADBindingSource2
+            // obtenerVueloRegistroTableAdapter
             // 
-            this.cIUDADBindingSource2.DataMember = "CIUDAD";
-            this.cIUDADBindingSource2.DataSource = this.gD2C2015DataSet2;
+            this.obtenerVueloRegistroTableAdapter.ClearBeforeFill = true;
             // 
-            // cIUDADTableAdapter2
+            // ColumnaCambios
             // 
-            this.cIUDADTableAdapter2.ClearBeforeFill = true;
-            // 
-            // gD2C2015DataSet3
-            // 
-            this.gD2C2015DataSet3.DataSetName = "GD2C2015DataSet3";
-            this.gD2C2015DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // obtenerVueloRegistroBindingSource2
-            // 
-            this.obtenerVueloRegistroBindingSource2.DataMember = "ObtenerVueloRegistro";
-            this.obtenerVueloRegistroBindingSource2.DataSource = this.gD2C2015DataSet3;
-            // 
-            // obtenerVueloRegistroTableAdapter1
-            // 
-            this.obtenerVueloRegistroTableAdapter1.ClearBeforeFill = true;
+            this.ColumnaCambios.HeaderText = "";
+            this.ColumnaCambios.Name = "ColumnaCambios";
+            this.ColumnaCambios.ReadOnly = true;
+            this.ColumnaCambios.Width = 20;
             // 
             // NroVuelo
             // 
@@ -288,8 +278,6 @@
             // 
             this.ciudadDestinoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ciudadDestinoDataGridViewTextBoxColumn.DataPropertyName = "CiudadDestino";
-            this.ciudadDestinoDataGridViewTextBoxColumn.DataSource = this.cIUDADBindingSource2;
-            this.ciudadDestinoDataGridViewTextBoxColumn.DisplayMember = "CIUDAD_NOMBRE";
             this.ciudadDestinoDataGridViewTextBoxColumn.HeaderText = "Ciudad Destino";
             this.ciudadDestinoDataGridViewTextBoxColumn.Name = "ciudadDestinoDataGridViewTextBoxColumn";
             this.ciudadDestinoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -311,38 +299,34 @@
             this.vUELOFECHALLEGADAESTIMADADataGridViewTextBoxColumn.Name = "vUELOFECHALLEGADAESTIMADADataGridViewTextBoxColumn";
             this.vUELOFECHALLEGADAESTIMADADataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // vUELOFECHALLEGADADataGridViewTextBoxColumn
+            // VueloFechaLlegada
             // 
-            this.vUELOFECHALLEGADADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.vUELOFECHALLEGADADataGridViewTextBoxColumn.DataPropertyName = "VUELO_FECHA_LLEGADA";
-            this.vUELOFECHALLEGADADataGridViewTextBoxColumn.HeaderText = "Fecha Llegada";
-            this.vUELOFECHALLEGADADataGridViewTextBoxColumn.Name = "vUELOFECHALLEGADADataGridViewTextBoxColumn";
+            this.VueloFechaLlegada.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.VueloFechaLlegada.DataPropertyName = "VUELO_FECHA_LLEGADA";
+            this.VueloFechaLlegada.HeaderText = "Fecha Llegada";
+            this.VueloFechaLlegada.Name = "VueloFechaLlegada";
             // 
             // RegLlegada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 374);
+            this.ClientSize = new System.Drawing.Size(894, 499);
+            this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "RegLlegada";
             this.Text = "Registro de Llegada de Vuelos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cIUDADBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSetJ)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obtenerVueloRegistroBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSetJBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obtenerVueloRegistroBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cIUDADBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cIUDADBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obtenerVueloRegistroBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSetCiudad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cIUDADBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.obtenerVueloRegistroBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSetObtenerVueloRegistro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,30 +342,23 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private GD2C2015DataSetJ gD2C2015DataSetJ;
-        private System.Windows.Forms.BindingSource cIUDADBindingSource;
-        private GD2C2015DataSetJTableAdapters.CIUDADTableAdapter cIUDADTableAdapter;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.BindingSource obtenerVueloRegistroBindingSource;
-        private System.Windows.Forms.BindingSource gD2C2015DataSetJBindingSource;
-        private GD2C2015DataSetJTableAdapters.ObtenerVueloRegistroTableAdapter obtenerVueloRegistroTableAdapter;
-        private System.Windows.Forms.BindingSource obtenerVueloRegistroBindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private GD2C2015DataSet1 gD2C2015DataSet1;
+        private System.Windows.Forms.Button btnGrabar;
+        private GD2C2015DataSetCiudad gD2C2015DataSetCiudad;
+        private System.Windows.Forms.BindingSource cIUDADBindingSource;
+        private GD2C2015DataSetCiudadTableAdapters.CIUDADTableAdapter cIUDADTableAdapter;
         private System.Windows.Forms.BindingSource cIUDADBindingSource1;
-        private GD2C2015DataSet1TableAdapters.CIUDADTableAdapter cIUDADTableAdapter1;
-        private GD2C2015DataSet2 gD2C2015DataSet2;
-        private System.Windows.Forms.BindingSource cIUDADBindingSource2;
-        private GD2C2015DataSet2TableAdapters.CIUDADTableAdapter cIUDADTableAdapter2;
+        private System.Windows.Forms.BindingSource obtenerVueloRegistroBindingSource;
+        private GD2C2015DataSetObtenerVueloRegistro gD2C2015DataSetObtenerVueloRegistro;
+        private GD2C2015DataSetObtenerVueloRegistroTableAdapters.ObtenerVueloRegistroTableAdapter obtenerVueloRegistroTableAdapter;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnaCambios;
         private System.Windows.Forms.DataGridViewTextBoxColumn NroVuelo;
         private System.Windows.Forms.DataGridViewTextBoxColumn aEROMATRICULADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ciudadOrigenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn ciudadDestinoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vUELOFECHASALIDADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vUELOFECHALLEGADAESTIMADADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vUELOFECHALLEGADADataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource obtenerVueloRegistroBindingSource2;
-        private GD2C2015DataSet3 gD2C2015DataSet3;
-        private GD2C2015DataSet3TableAdapters.ObtenerVueloRegistroTableAdapter obtenerVueloRegistroTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VueloFechaLlegada;
     }
 }

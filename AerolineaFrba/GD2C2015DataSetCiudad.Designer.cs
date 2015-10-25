@@ -20,9 +20,9 @@ namespace AerolineaFrba {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("GD2C2015DataSet2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("GD2C2015DataSetCiudad")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class GD2C2015DataSet2 : global::System.Data.DataSet {
+    public partial class GD2C2015DataSetCiudad : global::System.Data.DataSet {
         
         private CIUDADDataTable tableCIUDAD;
         
@@ -30,7 +30,7 @@ namespace AerolineaFrba {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public GD2C2015DataSet2() {
+        public GD2C2015DataSetCiudad() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace AerolineaFrba {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected GD2C2015DataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected GD2C2015DataSetCiudad(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace AerolineaFrba {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            GD2C2015DataSet2 cln = ((GD2C2015DataSet2)(base.Clone()));
+            GD2C2015DataSetCiudad cln = ((GD2C2015DataSetCiudad)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace AerolineaFrba {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "GD2C2015DataSet2";
+            this.DataSetName = "GD2C2015DataSetCiudad";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/GD2C2015DataSet2.xsd";
+            this.Namespace = "http://tempuri.org/GD2C2015DataSetCiudad.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableCIUDAD = new CIUDADDataTable();
@@ -225,7 +225,7 @@ namespace AerolineaFrba {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            GD2C2015DataSet2 ds = new GD2C2015DataSet2();
+            GD2C2015DataSetCiudad ds = new GD2C2015DataSetCiudad();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -490,7 +490,7 @@ namespace AerolineaFrba {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                GD2C2015DataSet2 ds = new GD2C2015DataSet2();
+                GD2C2015DataSetCiudad ds = new GD2C2015DataSetCiudad();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -638,7 +638,7 @@ namespace AerolineaFrba {
         }
     }
 }
-namespace AerolineaFrba.GD2C2015DataSet2TableAdapters {
+namespace AerolineaFrba.GD2C2015DataSetCiudadTableAdapters {
     
     
     /// <summary>
@@ -813,7 +813,7 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(GD2C2015DataSet2.CIUDADDataTable dataTable) {
+        public virtual int Fill(GD2C2015DataSetCiudad.CIUDADDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -826,9 +826,9 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual GD2C2015DataSet2.CIUDADDataTable GetData() {
+        public virtual GD2C2015DataSetCiudad.CIUDADDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            GD2C2015DataSet2.CIUDADDataTable dataTable = new GD2C2015DataSet2.CIUDADDataTable();
+            GD2C2015DataSetCiudad.CIUDADDataTable dataTable = new GD2C2015DataSetCiudad.CIUDADDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -836,14 +836,14 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GD2C2015DataSet2.CIUDADDataTable dataTable) {
+        public virtual int Update(GD2C2015DataSetCiudad.CIUDADDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GD2C2015DataSet2 dataSet) {
+        public virtual int Update(GD2C2015DataSetCiudad dataSet) {
             return this.Adapter.Update(dataSet, "CIUDAD");
         }
         
@@ -1056,7 +1056,7 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(GD2C2015DataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(GD2C2015DataSetCiudad dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._cIUDADTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.CIUDAD.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1075,7 +1075,7 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(GD2C2015DataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(GD2C2015DataSetCiudad dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._cIUDADTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.CIUDAD.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1093,7 +1093,7 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(GD2C2015DataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(GD2C2015DataSetCiudad dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._cIUDADTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.CIUDAD.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1135,7 +1135,7 @@ SELECT CIUDAD_ID, CIUDAD_NOMBRE FROM [#GDD].CIUDAD WHERE (CIUDAD_ID = @CIUDAD_ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(GD2C2015DataSet2 dataSet) {
+        public virtual int UpdateAll(GD2C2015DataSetCiudad dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
