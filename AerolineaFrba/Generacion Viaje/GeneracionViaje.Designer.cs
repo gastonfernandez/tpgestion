@@ -1,6 +1,6 @@
 ﻿namespace AerolineaFrba.Generacion_Viaje
 {
-    partial class Form1
+    partial class GeneracionViaje
     {
         /// <summary>
         /// Required designer variable.
@@ -135,12 +135,12 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(182, 188);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(320, 119);
+            this.dataGridView1.Size = new System.Drawing.Size(539, 119);
             this.dataGridView1.TabIndex = 9;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(414, 328);
+            this.button1.Location = new System.Drawing.Point(538, 328);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -149,7 +149,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(510, 328);
+            this.button2.Location = new System.Drawing.Point(646, 328);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
@@ -170,11 +170,11 @@
             // 
             this.rUTATableAdapter.ClearBeforeFill = true;
             // 
-            // Form1
+            // GeneracionViaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 363);
+            this.ClientSize = new System.Drawing.Size(778, 369);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -187,8 +187,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "GeneracionViaje";
+            this.Text = "Generacion de Viaje";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gD2C2015DataSet)).EndInit();

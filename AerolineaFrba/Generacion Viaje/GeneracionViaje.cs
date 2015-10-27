@@ -8,15 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+using AerolineaFrba.Mappings;
+
 namespace AerolineaFrba.Generacion_Viaje
 {
-    public partial class Form1 : Form
+    public partial class GeneracionViaje : Form
     {
-        public Form1()
+        public GeneracionViaje()
         {
             InitializeComponent();
             CargarRutas();
-            //CargarAeronaves; /* lu lo comente para compilar y probar lo mio del login*/
+            CargarAeronaves(); 
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -34,7 +38,7 @@ namespace AerolineaFrba.Generacion_Viaje
         private void CargarRutas()
         {
             BasedeDatos bd = new BasedeDatos();
-            bd.openConnection(); /* fijate que no hace falta hacer el open conection, simplemente hacer el select, dentro de ese metodo se hace un open y un close sino te va a pinchar*/
+          //  bd.openConnection(); /* fijate que no hace falta hacer el open conection, simplemente hacer el select, dentro de ese metodo se hace un open y un close sino te va a pinchar*/
             string sSql = "SELECT * FROM VW_RUTAS";
             DataTable dt = bd.select_query(sSql);
             dataGridView1.DataSource = dt;
@@ -44,11 +48,14 @@ namespace AerolineaFrba.Generacion_Viaje
             dataGridView1.Columns[3].Visible = false;
         }
 
-        private void CargarAeronaves() 
+       
+        private void CargarAeronaves()
         {
-            BasedeDatos bd = new BasedeDatos();
-            bd.openConnection();
-        }
-
+            List<Aeronave> listaAeronave = new Aeronave().GetAeronaves();
+            comboBox1.DataSource = listaAeronave;
+           
+            comboBox1.DisplayMember = "aero_matricula";
+            comboBox1.ValueMember = "aero_id";
+              }
     }
 }

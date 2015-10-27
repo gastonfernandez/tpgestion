@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using AerolineaFrba.Registro_Llegada_Destino;
+using AerolineaFrba.Generacion_Viaje;
+using AerolineaFrba.Compra;
 
 namespace AerolineaFrba.Menu
 {
@@ -29,5 +31,15 @@ namespace AerolineaFrba.Menu
             RegLlegada frm = new Registro_Llegada_Destino.RegLlegada();
             frm.Show();
         }
+
+       
+        private void generarViajeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            GeneracionViaje frm1 = new Generacion_Viaje.GeneracionViaje();
+            frm1.Show();
+
+        }
+
+             
     }
 }

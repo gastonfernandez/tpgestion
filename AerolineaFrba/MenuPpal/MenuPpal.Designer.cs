@@ -111,7 +111,6 @@
             this.comprarToolStripMenuItem.Name = "comprarToolStripMenuItem";
             this.comprarToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.comprarToolStripMenuItem.Text = "Comprar";
-            // 
             // devoluciónToolStripMenuItem
             // 
             this.devoluciónToolStripMenuItem.Name = "devoluciónToolStripMenuItem";
@@ -123,6 +122,7 @@
             this.generarViajeToolStripMenuItem.Name = "generarViajeToolStripMenuItem";
             this.generarViajeToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.generarViajeToolStripMenuItem.Text = "Generar Viaje";
+            this.generarViajeToolStripMenuItem.Click += new System.EventHandler(this.generarViajeToolStripMenuItem_Click_1);
             // 
             // registroDeUsuarioToolStripMenuItem
             // 
